@@ -1,0 +1,71 @@
+.moments {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+
+  .moments__img {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .hd {
+    background-image: url('https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/nova-8/imgs/huawei-nova-8-sample-photos-01@mob@2x.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .uwa {
+    background-image: url('https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/nova-8/imgs/huawei-nova-8-sample-photos-02@mob@2x.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  .portrait {
+    background-image: url('https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/nova-8/imgs/huawei-nova-8-sample-photos-03@mob@2x.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .macro {
+    background-image: url('https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/nova-8/imgs/huawei-nova-8-sample-photos-04@mob@2x.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  .fat {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .moments {
+    display: flex;
+    flex-direction: column;
+    .moments__img {
+      width: 100%;
+      background-size: cover;
+      background-position: top;
+    }
+    .portrait {
+      color: white;
+      background-size: 100% auto;
+    }
+  }
+  .fat {
+    height: 100vh;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .moments {
+    height: 100%;
+    .fat {
+      background-size: auto 100%;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@mixin darkMagicSelfie ($url) {
+  background-image: url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.darkMagic {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+
+  .darkMagic__content {
+    width: 60%;
+    height: calc(100%-40px);
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+
+  .darkMagic__photo {
+    height: 100%;
+    width: 20%;
+  }
+
+  .selfieHD {
+    @include darkMagicSelfie("https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/nova-8/imgs/huawei-nova-8-super-night-selfie-01@2x.jpg");
+  }
+
+  .selfieDM {
+    @include darkMagicSelfie("https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/nova-8/imgs/huawei-nova-8-super-night-selfie-02@2x.jpg");
+  }
+}
+
+.hideContent {
+  display: none;
+}
+
+.showSelfieHD {
+  flex: 1 0 auto;
+}
+
+.showSelfieMD {
+  flex: 1 0 auto;
+}
+
+.fixSelfie {
+  flex: 0 1 20%;
+}
